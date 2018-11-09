@@ -170,22 +170,22 @@ namespace MailCommander
 
         public void StopService()
         {
-            //MailCommandTimer.Enabled = false;
-            //EnableCheckBox.Checked = false;
-            //EnableCheckBox.Text = "Service Stoped";
-            //this.EnableCheckBox.ForeColor = System.Drawing.Color.Red;
-            //ServiceToolStripMenuItem.Text = "Start";
+            MailCommandTimer.Enabled = false;
+            EnableCheckBox.Checked = false;
+            EnableCheckBox.Text = "Service Stoped";
+            this.EnableCheckBox.ForeColor = System.Drawing.Color.Red;
+            ServiceToolStripMenuItem.Text = "Start";
             ServiceReplyCheckBox.Checked = false;
             Logger.Log("Service Stoped");
         }
 
         public void StartService()
         {
-            //MailCommandTimer.Enabled = true;
-            //EnableCheckBox.Checked = true;
-            //ServiceToolStripMenuItem.Text = "Stop";
-            //EnableCheckBox.Text = "Service Running";
-            //this.EnableCheckBox.ForeColor = System.Drawing.Color.Green;
+            MailCommandTimer.Enabled = true;
+            EnableCheckBox.Checked = true;
+            ServiceToolStripMenuItem.Text = "Stop";
+            EnableCheckBox.Text = "Service Running";
+            this.EnableCheckBox.ForeColor = System.Drawing.Color.Green;
             ServiceReplyCheckBox.Checked = true;
             Logger.Log("Service Started");
         }

@@ -1,0 +1,405 @@
+07/10/2016 11:57:50:> Service Started
+07/10/2016 11:57:59:> Service Stoped
+07/10/2016 12:01:50:> Service Started
+07/10/2016 12:02:12:> Service Stoped
+07/10/2016 12:02:32:> Service Started
+07/10/2016 12:03:48:> Service Stoped
+07/10/2016 12:14:28:> Service Started
+07/10/2016 12:14:37:> OFS_ALL Result Send To necati.arslan@turkiyefinans.com.tr
+07/10/2016 12:15:06:> Service Stoped
+07/10/2016 12:16:10:> Service Started
+07/10/2016 12:16:13:> OFS_ALL Result Send To necati.arslan@turkiyefinans.com.tr
+07/10/2016 13:34:11:> Mail Received From:necatia@gmail.com Subject:MC EXIT
+07/10/2016 13:34:11:> Application Exiting
+07/10/2016 13:34:11:> Service Stoped
+07/10/2016 14:17:13:> Service Started
+07/10/2016 14:18:13:> Mail Received From:necatia@gmail.com Subject:MC HI
+07/10/2016 14:18:13:> HI Result Send To necatia@gmail.com
+07/10/2016 14:20:33:> Service Stoped
+07/10/2016 14:20:36:> Service Started
+07/10/2016 14:24:37:> Mail Received From:necatia@gmail.com Subject:MC HI
+07/10/2016 14:24:37:> HI Result Send To necatia@gmail.com
+07/10/2016 14:25:28:> Service Stoped
+07/10/2016 14:25:34:> Service Started
+07/10/2016 14:26:19:> Mail Received From:necatia@gmail.com Subject:MC HI
+07/10/2016 14:26:19:> HI Result Send To necatia@gmail.com
+07/10/2016 14:32:25:> Mail Received From:necatiist@hotmail.com Subject:MC OFS_ALL
+07/10/2016 14:32:25:> There must be at least one name or contact group in the To, Cc, or Bcc box.
+07/10/2016 14:34:18:> Service Started
+07/10/2016 14:35:18:> Mail Received From:necatiist@hotmail.com Subject:MC OFS_ALL
+07/10/2016 14:35:18:> OFS_ALL Result Send To necatiist@hotmail.com
+07/10/2016 14:37:41:> Service Stoped
+07/10/2016 17:52:43:> Service Started
+10/10/2016 09:50:23:> Service Started
+10/10/2016 09:50:50:> Service Stoped
+10/10/2016 09:51:04:> Service Started
+10/10/2016 09:51:06:> Service Stoped
+10/10/2016 09:51:07:> Service Started
+10/10/2016 09:51:08:> Service Stoped
+10/10/2016 09:51:23:> Service Started
+10/10/2016 09:51:24:> Service Stoped
+10/10/2016 09:51:24:> Service Started
+10/10/2016 09:51:25:> Service Stoped
+10/10/2016 09:51:25:> Service Started
+10/10/2016 09:51:25:> Service Stoped
+10/10/2016 09:51:31:> Service Stoped
+10/10/2016 10:03:09:> Service Started
+10/10/2016 10:03:11:> Service Stoped
+10/10/2016 10:03:12:> Service Started
+10/10/2016 10:03:14:> Service Stoped
+10/10/2016 10:03:15:> Service Started
+10/10/2016 10:03:17:> Service Stoped
+10/10/2016 10:03:20:> Service Started
+10/10/2016 10:03:20:> Service Stoped
+10/10/2016 10:03:21:> Service Started
+10/10/2016 10:03:23:> Service Stoped
+10/10/2016 10:03:23:> Service Stoped
+10/10/2016 10:04:09:> Service Started
+10/10/2016 10:04:11:> Service Stoped
+10/10/2016 10:04:12:> Service Started
+10/10/2016 10:04:13:> Service Stoped
+10/10/2016 10:04:16:> Service Started
+10/10/2016 10:05:10:> Service Stoped
+10/10/2016 10:05:11:> Service Started
+10/10/2016 10:05:41:> Service Stoped
+10/10/2016 10:08:23:> Service Started
+10/10/2016 10:08:35:> Service Stoped
+10/10/2016 10:08:36:> Service Started
+10/10/2016 10:09:09:> Service Stoped
+10/10/2016 10:09:09:> Service Started
+10/10/2016 10:09:17:> Service Stoped
+10/10/2016 10:09:18:> Service Started
+10/10/2016 10:10:13:> Service Stoped
+10/10/2016 10:15:58:> Service Started
+10/10/2016 10:16:07:> Service Stoped
+10/10/2016 10:16:38:> Service Started
+10/10/2016 10:16:52:> Service Stoped
+10/10/2016 10:16:53:> Service Started
+10/10/2016 10:16:56:> Service Stoped
+10/10/2016 10:16:57:> Service Started
+10/10/2016 10:17:37:> Service Stoped
+10/10/2016 10:21:29:> Service Started
+10/10/2016 10:22:27:> Service Stoped
+10/10/2016 10:24:15:> Service Started
+10/10/2016 10:24:30:> Service Stoped
+10/10/2016 10:24:36:> Service Started
+10/10/2016 10:24:52:> Service Stoped
+10/10/2016 10:26:57:> Service Started
+10/10/2016 10:27:25:> Service Stoped
+10/10/2016 10:27:43:> Service Started
+10/10/2016 10:27:57:> Service Stoped
+10/10/2016 10:28:14:> Service Started
+10/10/2016 10:29:49:> Service Stoped
+10/10/2016 10:30:25:> Service Started
+10/10/2016 10:30:33:> Service Stoped
+10/10/2016 10:32:29:> Service Started
+10/10/2016 10:32:31:> Service Stoped
+10/10/2016 10:39:13:> Service Started
+10/10/2016 10:39:14:> Service Stoped
+10/10/2016 10:39:56:> Service Started
+10/10/2016 10:40:03:> Service Stoped
+10/10/2016 10:40:27:> Service Started
+10/10/2016 10:42:03:> Service Stoped
+10/10/2016 10:48:10:> Service Started
+10/10/2016 10:49:28:> Service Stoped
+10/10/2016 10:49:47:> Service Started
+10/10/2016 10:50:04:> Service Stoped
+10/10/2016 10:51:33:> Service Started
+10/10/2016 10:51:35:> Service Stoped
+10/10/2016 10:51:52:> Service Started
+10/10/2016 10:52:11:> Service Stoped
+12/10/2016 12:26:46:> Service Started
+12/10/2016 12:27:50:> Mail Received From:necatiist@yahoo.com Subject:MC CL
+12/10/2016 12:28:15:> CL Result Send To necatiist@yahoo.com
+12/10/2016 12:29:57:> Service Stoped
+12/10/2016 21:58:18:> Service Started
+12/10/2016 21:58:35:> Mail Received From:necatiist@yahoo.com Subject:MC OFS
+12/10/2016 21:58:36:> OFS Result Send To necatiist@yahoo.com
+12/10/2016 21:58:49:> Service Stoped
+17/10/2016 17:58:08:> Service Started
+17/10/2016 17:58:42:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC CL
+17/10/2016 17:59:03:> CL Result Send To /O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795
+17/10/2016 17:59:17:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC CL
+17/10/2016 17:59:22:> /O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Is Not Allowed :-(
+17/10/2016 18:01:08:> Service Stoped
+18/10/2016 17:17:59:> Service Started
+18/10/2016 17:18:23:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC CL
+18/10/2016 17:18:30:> CL Result Send To /O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795
+18/10/2016 17:19:01:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC CL
+18/10/2016 17:19:20:> CL Result Send To /O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795
+18/10/2016 17:19:36:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC CL
+18/10/2016 17:19:49:> CL Result Send To /O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795
+18/10/2016 17:19:57:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC CL
+18/10/2016 17:20:05:> /O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Is Not Allowed :-(
+18/10/2016 17:21:29:> Service Stoped
+18/10/2016 17:26:17:> Service Started
+18/10/2016 17:26:20:> Service Stoped
+18/10/2016 17:33:29:> Service Started
+18/10/2016 17:34:00:> Service Stoped
+18/10/2016 17:36:56:> Service Started
+18/10/2016 17:36:58:> Service Stoped
+18/10/2016 17:39:13:> Service Started
+18/10/2016 17:40:12:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC CL
+18/10/2016 17:40:12:> The method or operation is not implemented.
+18/10/2016 17:40:58:> Service Started
+18/10/2016 17:41:07:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC CL
+18/10/2016 17:41:07:> /O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Is Not Allowed :-(
+18/10/2016 17:41:33:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC CL
+18/10/2016 17:43:40:> Service Started
+18/10/2016 17:43:52:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC CL
+18/10/2016 17:43:52:> CL Result Send To /O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795
+18/10/2016 17:44:15:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC CL
+18/10/2016 17:44:15:> /O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Is Not Allowed :-(
+18/10/2016 17:44:29:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC CL
+18/10/2016 17:44:53:> /O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Is Not Allowed :-(
+18/10/2016 17:45:07:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC CL
+18/10/2016 17:45:07:> CL Result Send To /O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795
+18/10/2016 17:45:29:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC CL
+18/10/2016 17:45:29:> /O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Is Not Allowed :-(
+18/10/2016 17:45:37:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC CL
+18/10/2016 17:45:37:> CL Result Send To /O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795
+18/10/2016 17:46:14:> Service Stoped
+18/10/2016 17:46:17:> Service Started
+18/10/2016 17:46:20:> Service Stoped
+18/10/2016 17:47:19:> Service Started
+18/10/2016 17:47:23:> Service Stoped
+18/10/2016 17:49:11:> Service Started
+18/10/2016 17:49:17:> Service Stoped
+18/10/2016 17:49:20:> Service Started
+18/10/2016 17:49:28:> Service Stoped
+18/10/2016 17:54:17:> Service Started
+18/10/2016 17:54:21:> Service Stoped
+18/10/2016 17:54:24:> Service Started
+18/10/2016 17:54:40:> Service Stoped
+18/10/2016 17:58:43:> Service Started
+18/10/2016 17:59:10:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC CL
+18/10/2016 17:59:10:> CL Result Send To /O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795
+18/10/2016 17:59:17:> Service Stoped
+18/11/2016 13:58:15:> Service Started
+18/11/2016 13:58:37:> Service Stoped
+18/11/2016 14:17:46:> Service Started
+18/11/2016 14:18:00:> Service Stoped
+18/11/2016 14:19:24:> Service Started
+18/11/2016 14:27:53:> Service Stoped
+06/09/2017 11:01:56:> Service Started
+06/09/2017 11:02:30:> Service Stoped
+06/09/2017 11:05:15:> Service Started
+06/09/2017 11:05:18:> Service Stoped
+06/09/2017 11:11:36:> Service Started
+06/09/2017 11:13:30:> Service Started
+06/09/2017 11:13:52:> OFSAA Result Send To necati.arslan@turkiyefinans.com.tr
+06/09/2017 11:14:51:> Service Stoped
+06/09/2017 11:17:46:> Service Started
+06/09/2017 11:18:04:> Service Stoped
+06/09/2017 11:22:18:> Service Started
+06/09/2017 11:22:52:> Service Stoped
+06/09/2017 11:23:03:> Service Started
+06/09/2017 11:23:04:> Service Stoped
+06/09/2017 11:29:37:> Service Started
+06/09/2017 11:30:35:> POFSAA Result Send To necati.arslan@turkiyefinans.com.tr
+06/09/2017 11:32:45:> OFS Result Send To necati.arslan@turkiyefinans.com.tr
+06/09/2017 11:33:09:> Service Stoped
+06/09/2017 11:33:41:> Service Started
+06/09/2017 11:34:11:> Service Stoped
+06/09/2017 11:37:12:> Service Started
+06/09/2017 11:37:40:> Service Stoped
+06/09/2017 11:37:54:> Service Started
+06/09/2017 11:37:56:> Service Stoped
+11/10/2017 11:58:08:> Service Started
+11/10/2017 11:58:28:> Service Stoped
+11/10/2017 11:59:37:> Service Started
+11/10/2017 11:59:55:> Service Stoped
+11/10/2017 12:04:07:> Service Started
+11/10/2017 12:04:37:> OFS Result Send To necati.arslan@turkiyefinans.com.tr
+11/10/2017 12:07:06:> Service Stoped
+11/10/2017 12:08:32:> Service Started
+11/10/2017 12:08:38:> OFS Result Send To necati.arslan@turkiyefinans.com.tr
+11/10/2017 12:08:41:> Service Stoped
+11/10/2017 12:08:52:> Service Started
+11/10/2017 12:09:09:> Service Stoped
+11/10/2017 12:09:13:> Service Started
+11/10/2017 12:09:20:> Service Stoped
+11/10/2017 13:49:53:> Service Started
+11/10/2017 13:50:55:> Service Stoped
+11/10/2017 13:50:58:> Service Started
+11/10/2017 13:51:10:> Service Stoped
+11/10/2017 13:51:17:> Service Started
+11/10/2017 13:51:27:> Service Stoped
+11/10/2017 14:09:42:> Service Started
+11/10/2017 14:10:49:> Service Started
+11/10/2017 14:12:58:> Service Stoped
+11/10/2017 14:13:52:> Service Started
+11/10/2017 14:21:55:> Service Started
+11/10/2017 14:22:41:> Service Stoped
+11/10/2017 14:24:10:> Service Started
+11/10/2017 14:24:56:> ERROR : Object reference not set to an instance of an object.
+11/10/2017 14:24:57:> TEST Result Send To necati.arslan@turkiyefinans.com.tr
+11/10/2017 14:25:03:> Service Stoped
+11/10/2017 14:25:22:> Service Started
+11/10/2017 14:25:50:> ERROR : Object reference not set to an instance of an object.
+11/10/2017 14:25:50:> TEST Result Send To necati.arslan@turkiyefinans.com.tr
+11/10/2017 14:26:06:> Value cannot be null.
+Parameter name: Invalid MailCommand.Data
+11/10/2017 14:27:13:> Service Started
+11/10/2017 14:27:18:> ERROR : Object reference not set to an instance of an object.
+11/10/2017 14:27:18:> TEST Result Send To necati.arslan@turkiyefinans.com.tr
+11/10/2017 14:28:03:> ERROR : Object reference not set to an instance of an object.
+11/10/2017 14:28:04:> TEST Result Send To necati.arslan@turkiyefinans.com.tr
+11/10/2017 14:28:48:> ERROR : Object reference not set to an instance of an object.
+11/10/2017 14:28:48:> TEST Result Send To necati.arslan@turkiyefinans.com.tr
+11/10/2017 14:29:08:> TEST Result Send To necati.arslan@turkiyefinans.com.tr
+11/10/2017 14:29:23:> Service Stoped
+16/10/2017 12:12:29:> Service Started
+16/10/2017 12:14:25:> Service Stoped
+16/10/2017 12:15:00:> Service Started
+16/10/2017 12:15:24:> Service Stoped
+16/10/2017 12:15:39:> Service Started
+16/10/2017 12:16:23:> Service Stoped
+16/10/2017 16:59:27:> Service Started
+16/10/2017 16:59:32:> Service Stoped
+16/10/2017 16:59:45:> Service Started
+16/10/2017 16:59:49:> Service Stoped
+16/10/2017 17:00:05:> Service Started
+16/10/2017 17:00:14:> Service Stoped
+16/10/2017 17:01:15:> Service Started
+16/10/2017 17:01:36:> Service Stoped
+16/10/2017 17:04:35:> Service Started
+16/10/2017 17:05:33:> Service Stoped
+16/10/2017 17:05:35:> Service Started
+16/10/2017 17:07:05:> Service Stoped
+16/10/2017 17:07:08:> Service Started
+16/10/2017 17:07:18:> Service Stoped
+16/10/2017 17:07:24:> Service Started
+16/10/2017 17:07:40:> 1111 Result Send To necati.arslan@turkiyefinans.com.tr
+16/10/2017 17:08:41:> Service Stoped
+16/10/2017 17:09:19:> Service Started
+16/10/2017 17:09:52:> Service Stoped
+16/10/2017 17:10:20:> Service Started
+16/10/2017 17:10:33:> Service Stoped
+16/10/2017 17:11:44:> Service Started
+16/10/2017 17:11:53:> Service Stoped
+16/10/2017 17:13:06:> Service Started
+16/10/2017 17:13:16:> Service Stoped
+16/10/2017 17:15:03:> Service Started
+16/10/2017 17:18:36:> Service Started
+16/10/2017 17:18:41:> Service Stoped
+16/10/2017 17:19:41:> Service Started
+16/10/2017 17:19:58:> Service Stoped
+16/10/2017 17:20:44:> Service Started
+16/10/2017 17:21:12:> Service Stoped
+16/10/2017 17:22:59:> Service Started
+16/10/2017 17:23:04:> Service Stoped
+16/10/2017 17:24:03:> Service Started
+16/10/2017 17:24:09:> Service Stoped
+16/10/2017 17:24:39:> Service Started
+16/10/2017 17:25:59:> Service Started
+16/10/2017 17:26:30:> Service Started
+16/10/2017 17:26:48:> Service Stoped
+16/10/2017 17:26:50:> Service Started
+16/10/2017 17:26:56:> Service Stoped
+16/10/2017 17:26:58:> Service Started
+16/10/2017 17:27:02:> Service Stoped
+16/10/2017 17:27:31:> Service Started
+16/10/2017 17:27:32:> Service Stoped
+16/10/2017 17:29:37:> Service Started
+16/10/2017 17:29:46:> Service Stoped
+16/10/2017 17:30:27:> Service Started
+16/10/2017 17:32:02:> Service Started
+16/10/2017 17:32:44:> Service Started
+16/10/2017 17:34:52:> Service Started
+16/10/2017 17:35:25:> Service Started
+16/10/2017 17:35:52:> Service Started
+16/10/2017 17:36:13:> Service Stoped
+16/10/2017 17:37:46:> Service Started
+16/10/2017 17:39:34:> Service Started
+16/10/2017 17:39:49:> Service Started
+16/10/2017 17:40:00:> Service Stoped
+16/10/2017 17:40:11:> Service Started
+16/10/2017 17:40:16:> ERROR : Incorrect syntax near '2'.
+16/10/2017 17:40:16:> 1111 Result Send To necati.arslan@turkiyefinans.com.tr
+16/10/2017 17:44:40:> Service Stoped
+16/10/2017 17:49:31:> Service Started
+16/10/2017 17:51:10:> Service Stoped
+16/10/2017 17:56:40:> Service Started
+16/10/2017 17:57:17:> Service Stoped
+07/11/2017 10:28:59:> Service Started
+07/11/2017 10:29:48:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC STOP
+07/11/2017 10:29:48:> Service Is Stoping
+07/11/2017 10:29:48:> Service Stoped
+07/11/2017 10:29:48:> STOP Result Send To /O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795
+07/11/2017 10:29:48:> Service Is Stoped
+07/11/2017 10:30:01:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC START
+07/11/2017 10:30:01:> Service Is Starting
+07/11/2017 10:30:01:> Service Started
+07/11/2017 10:30:01:> Value cannot be null.
+Parameter name: Invalid MailCommand.Data
+07/11/2017 10:30:01:> Service Is Stoped
+07/11/2017 10:30:34:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC START
+07/11/2017 10:30:34:> Service Is Starting
+07/11/2017 10:30:34:> Service Started
+07/11/2017 10:30:34:> Value cannot be null.
+Parameter name: Invalid MailCommand.Data
+07/11/2017 10:30:34:> Service Is Stoped
+07/11/2017 10:32:10:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC MIS
+07/11/2017 10:32:26:> MIS Result Send To /O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795
+07/11/2017 10:33:01:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC MIS
+07/11/2017 10:33:27:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC MIS
+07/11/2017 10:34:34:> Service Stoped
+07/11/2017 10:37:41:> Service Started
+07/11/2017 10:38:01:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC START
+07/11/2017 10:38:01:> Service Is Starting
+07/11/2017 10:38:01:> Service Started
+07/11/2017 10:38:01:> Value cannot be null.
+Parameter name: Invalid MailCommand.Data
+07/11/2017 10:38:01:> Service Is Stoped
+07/11/2017 10:38:29:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC START
+07/11/2017 10:38:34:> Service Is Starting
+07/11/2017 10:38:36:> Service Started
+07/11/2017 10:39:30:> Service Started
+07/11/2017 10:39:45:> Mail Received From:/O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795 Subject:MC START
+07/11/2017 10:39:45:> Service Is Starting
+07/11/2017 10:39:45:> Service Started
+07/11/2017 10:39:45:> START Result Send To /O=AFK/OU=KATILIM/CN=RECIPIENTS/CN=NA003795
+07/11/2017 10:39:46:> Service Is Stoped
+07/11/2017 10:40:25:> Service Stoped
+26.09.2018 16:16:09:> Service Started
+26.09.2018 16:16:24:> TEST Result Send To necati.arslan@turkiyefinans.com.tr
+26.09.2018 16:17:04:> Service Stoped
+09/11/2018 11:21:32:> Service Started
+09/11/2018 11:22:09:> Service Stoped
+09/11/2018 11:35:54:> Service Started
+09/11/2018 11:36:02:> Service Stoped
+09/11/2018 11:37:14:> Service Started
+09/11/2018 11:37:35:> ERROR : ORA-12154: TNS:could not resolve the connect identifier specified
+
+09/11/2018 11:37:35:> POFSAA Result Send To necati.arslan@turkiyefinans.com.tr
+09/11/2018 11:37:46:> Service Stoped
+09/11/2018 11:40:10:> Service Started
+09/11/2018 11:40:12:> ERROR : Could not load file or assembly 'Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342' or one of its dependencies. An attempt was made to load a program with an incorrect format.
+09/11/2018 11:40:13:> POFSAA Result Send To necati.arslan@turkiyefinans.com.tr
+09/11/2018 11:40:22:> Service Stoped
+09/11/2018 11:40:29:> Service Started
+09/11/2018 11:40:35:> Service Stoped
+09/11/2018 11:41:32:> Service Started
+09/11/2018 11:43:14:> Service Started
+09/11/2018 11:43:21:> ERROR : Could not load file or assembly 'Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342' or one of its dependencies. An attempt was made to load a program with an incorrect format.
+09/11/2018 11:43:21:> POFSAA Result Send To necati.arslan@turkiyefinans.com.tr
+09/11/2018 11:46:10:> Service Started
+09/11/2018 11:46:24:> INTG Result Send To necati.arslan@turkiyefinans.com.tr
+09/11/2018 11:46:58:> ERROR : Could not load file or assembly 'Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342' or one of its dependencies. An attempt was made to load a program with an incorrect format.
+09/11/2018 11:46:58:> POFSAA Result Send To necati.arslan@turkiyefinans.com.tr
+09/11/2018 13:47:28:> Service Stoped
+09/11/2018 13:48:42:> Service Started
+09/11/2018 13:48:48:> ERROR : Could not load file or assembly 'Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342' or one of its dependencies. An attempt was made to load a program with an incorrect format.
+09/11/2018 13:48:48:> POFSAA Result Send To necati.arslan@turkiyefinans.com.tr
+09/11/2018 13:52:17:> Service Stoped
+09/11/2018 13:53:29:> Service Started
+09/11/2018 13:53:41:> OFS Result Send To necati.arslan@turkiyefinans.com.tr
+09/11/2018 13:57:30:> Service Started
+09/11/2018 14:04:45:> Service Started
+09/11/2018 14:07:33:> Service Started
+09/11/2018 14:08:03:> Service Started
+09/11/2018 14:08:54:> Service Started
+09/11/2018 14:11:01:> Service Started
+09/11/2018 14:23:39:> Service Started
+09/11/2018 14:24:15:> POFSAA Result Send To necati.arslan@turkiyefinans.com.tr

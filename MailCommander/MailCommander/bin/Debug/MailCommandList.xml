@@ -1,0 +1,357 @@
+<?xml version="1.0" standalone="yes"?>
+<MailCommandDataSet xmlns="http://tempuri.org/MailCommandDataSet.xsd">
+  <MailCommandDataTable>
+    <Command>OFS</Command>
+    <Connection>SS-DW.FIN_BI_DW_CONFIG</Connection>
+    <Description>Active Running OFSAA Packages</Description>
+    <SqlCommandText>SELECT  
+	Duration = CASE WHEN el.EndTime IS NULL AND el.StartTime &lt; GETDATE()-1 THEN 0 ELSE DATEDIFF(MINUTE, el.StartTime,ISNULL(el.EndTime, GETDATE())) END, 
+	el.AuditID, 
+	el.PackageName, 
+	el.StartTime, 
+	el.EndTime, 
+	el.[Status], 
+	el.FailureSource, 
+	el.FailureMessage
+FROM 
+FIN_BI_DW_CONFIG.Audit.ExecutionLog el (NOLOCK)
+LEFT JOIN FIN_BI_DW_CONFIG.ETL.Package p (NOLOCK) ON el.PackageName = p.Name 
+WHERE  
+ 1=1 
+ AND (el.PackageName LIKE '%Ofsaa%' OR el.PackageName LIKE '%DwToDwMis%' OR el.PackageName LIKE '%MisValidation%') 
+ AND StartTime &gt; = CAST(GETDATE() AS DATE)
+ AND (Status = 0) 
+ORDER BY el.AuditID DESC
+
+</SqlCommandText>
+  </MailCommandDataTable>
+  <MailCommandDataTable>
+    <Command>OFS_ALL</Command>
+    <Connection>SS-DW.FIN_BI_DW_CONFIG</Connection>
+    <Description>Today Runned ALL OFSAA Packages</Description>
+    <SqlCommandText>SELECT  
+	Duration = CASE WHEN el.EndTime IS NULL AND el.StartTime &lt; GETDATE()-1 THEN 0 ELSE DATEDIFF(MINUTE, el.StartTime,ISNULL(el.EndTime, GETDATE())) END, 
+	el.AuditID, 
+	el.PackageName, 
+	el.StartTime, 
+	el.EndTime, 
+	el.[Status], 
+	el.FailureSource, 
+	el.FailureMessage
+FROM 
+FIN_BI_DW_CONFIG.Audit.ExecutionLog el (NOLOCK)
+LEFT JOIN FIN_BI_DW_CONFIG.ETL.Package p (NOLOCK) ON el.PackageName = p.Name 
+WHERE  
+ 1=1 
+ AND (el.PackageName LIKE '%Ofsaa%' OR el.PackageName LIKE '%DwToDwMis%' OR el.PackageName LIKE '%MisValidation%') 
+ AND StartTime &gt; = CAST(GETDATE() AS DATE)
+ --AND (Status = 0) 
+ORDER BY el.AuditID DESC
+
+
+</SqlCommandText>
+  </MailCommandDataTable>
+  <MailCommandDataTable>
+    <Command>MIS</Command>
+    <Connection>SP-REPORTS.Mis</Connection>
+    <Description>Active Running Mis Job</Description>
+    <SqlCommandText>SELECT  
+	Duration = DATEDIFF(minute, el.StartTime, ISNULL(el.EndTime, GETDATE())), 
+	el.AuditID, 
+	el.PackageName, 
+	el.[Status], 
+	el.StartTime, 
+	el.EndTime, 
+	el.FailureSource, 
+	el.FailureMessage
+FROM 
+	Audit.ExecutionLog el 
+WHERE  
+	1 = 1 
+	AND el.AuditID &gt;= (SELECT MAX(AuditID) FROM Audit.ExecutionLog WHERE PackageName IN ('MisMasterPackageDaily', 'MisMasterPackage'))  
+ORDER BY el.AuditID DESC
+
+</SqlCommandText>
+  </MailCommandDataTable>
+  <MailCommandDataTable>
+    <Command>INTG</Command>
+    <Connection>SS-DW.FIN_BI_INTG</Connection>
+    <Description>Bugün OFSAA ya veri atan paketler</Description>
+    <SqlCommandText>SELECT  el.PackageName ,
+        Cnt = COUNT(1) ,
+        LastStartTime = MAX(el.StartTime) ,
+        LastEndTime = MAX(el.EndTime) ,
+        Duration = DATEDIFF(MINUTE, MAX(el.StartTime), MAX(ISNULL(el.EndTime, GETDATE())))
+FROM    FIN_BI_DW_CONFIG.Audit.ExecutionLog el
+        LEFT JOIN FIN_BI_DW_CONFIG.Etl.Package p ON el.PackageName = p.Name
+WHERE   1 = 1
+        AND ( el.PackageName LIKE 'IntgToOFSAAD_DWH%' )
+        AND StartTime &gt; = CAST(GETDATE() AS DATE)
+        --AND ( el.AuditID &gt;= 4224246)
+GROUP BY el.PackageName;
+</SqlCommandText>
+  </MailCommandDataTable>
+  <MailCommandDataTable>
+    <Command>POFSAA_H</Command>
+    <Connection>POFSAA.OFSAAD_DWH</Connection>
+    <Description>OFSAA Job Last 30 Days History</Description>
+    <SqlCommandText>SELECT 
+    SESS_NO 
+    ,SESS_NAME 
+    ,SESS_BEG 
+    ,SESS_END 
+    ,STARTUP_VARIABLES     
+    ,ROUND(SESS_DUR / 3600) AS SESS_DUR_HR 
+    ,SESS_STATUS 
+    ,PARENT_SESS_NO 
+    ,ERROR_MESSAGE 
+FROM 
+    PRD_ODI_REPO.SNP_SESSION 
+WHERE 
+    TO_DATE(SESS_BEG, 'dd/mm/yyyy') &gt;= TO_DATE(SYSDATE-30, 'dd/mm/yyyy') 
+    AND SESS_NAME = '90_OFSAA_GUNLUK' 
+ORDER BY 
+    SESS_BEG DESC</SqlCommandText>
+  </MailCommandDataTable>
+  <MailCommandDataTable>
+    <Command>POFSAA</Command>
+    <Connection>POFSAA.OFSAAD_DWH</Connection>
+    <Description>Today Running OFSAA Jobs</Description>
+    <SqlCommandText>SELECT 
+    SESS_NO 
+    ,SESS_NAME 
+    ,SESS_BEG 
+    ,SESS_END 
+    ,STARTUP_VARIABLES     
+    ,ROUND(SESS_DUR / 3600) AS SESS_DUR_HR 
+    ,SESS_STATUS 
+    ,ERROR_MESSAGE 
+FROM 
+    PRD_ODI_REPO.SNP_SESSION 
+WHERE 
+    1=1
+    AND TO_DATE(SESS_BEG, 'dd/mm/yyyy') = TO_DATE(SYSDATE, 'dd/mm/yyyy') 
+    AND SESS_NAME IN ('90_OFSAA_GUNLUK', 'ORACLE_TO_SQL_MIS', '90_OFSAA_GUNLUK_FOR_REPORTS')
+ORDER BY 
+    SESS_BEG DESC</SqlCommandText>
+  </MailCommandDataTable>
+  <MailCommandDataTable>
+    <Command>POFSAA_D</Command>
+    <Connection>POFSAA.OFSAAD_DWH</Connection>
+    <Description>Last Running OFSAA Job Detail</Description>
+    <SqlCommandText>SELECT 
+    SESS_NO 
+    ,SESS_NAME 
+    ,SESS_BEG 
+    ,SESS_END 
+    ,STARTUP_VARIABLES     
+    ,ROUND(SESS_DUR / 3600) AS SESS_DUR_HR 
+    ,SESS_STATUS 
+    ,ERROR_MESSAGE 
+FROM 
+    PRD_ODI_REPO.SNP_SESSION 
+WHERE 
+    1=1
+    AND PARENT_SESS_NO IN (
+        SELECT 
+            MAX(SESS_NO)  
+        FROM 
+            PRD_ODI_REPO.SNP_SESSION 
+        WHERE 
+            1=1
+            AND SESS_NAME IN ('90_OFSAA_GUNLUK', 'ORACLE_TO_SQL_MIS', '90_OFSAA_GUNLUK_FOR_REPORTS')  
+    ) 
+ORDER BY 
+    SESS_BEG</SqlCommandText>
+  </MailCommandDataTable>
+  <MailCommandDataTable>
+    <Command>POFSAA_R</Command>
+    <Connection>POFSAA.OFSAAD_DWH</Connection>
+    <Description>OFSAA Running ODI Scripts</Description>
+    <SqlCommandText>select  
+    g.sid 
+    ,g.username 
+    ,g.machine 
+    ,g.osuser   
+    ,s.sql_text
+    ,g.program 
+    ,g.BLOCKING_SESSION 
+from    
+    gv$session g left join gv$sql s on g.sql_id=s.sql_id 
+where  1=1 
+    and g.status='ACTIVE' 
+    and g.USERNAME='OFSAAD_ADM' </SqlCommandText>
+  </MailCommandDataTable>
+  <MailCommandDataTable>
+    <Command>POFSAA_ER</Command>
+    <Connection>POFSAA.OFSAAD_DWH</Connection>
+    <Description>OFSAA Execution Queue</Description>
+    <SqlCommandText>SELECT * 
+FROM OFSAAD_XLS.XLS_LOAD_DATA 
+WHERE  
+1=1 
+AND  
+( 
+(1=1 AND DWH_STATE = 1) 
+OR (1=1 AND DWH_STATE = 2) 
+OR (0=1 AND DWH_STATE = 3) 
+) 
+AND (1=1 OR P_DATE = TO_DATE(20180219, 'yyyymmdd')) 
+ORDER BY P_DATE ASC </SqlCommandText>
+  </MailCommandDataTable>
+  <MailCommandDataTable>
+    <Command>POFSAA_DBA</Command>
+    <Connection>POFSAA.OFSAAD_DWH</Connection>
+    <Description>Returns POFSAA gv$session Active</Description>
+    <SqlCommandText>select  
+    g.sid 
+    ,g.username 
+    ,g.machine 
+    ,g.osuser   
+    ,s.sql_fulltext 
+    ,g.program 
+    ,g.BLOCKING_SESSION 
+from    
+    gv$session g left join gv$sql s on g.sql_id=s.sql_id 
+where  1=1 
+    and g.status='ACTIVE'</SqlCommandText>
+  </MailCommandDataTable>
+  <MailCommandDataTable>
+    <Command>JC</Command>
+    <Connection>SS-DW.FIN_BI_INTG</Connection>
+    <Description>Returns OFSAA Job Configuration</Description>
+    <SqlCommandText>select * from OFSAAD_DWH.OfsaaJobConfiguration</SqlCommandText>
+  </MailCommandDataTable>
+  <MailCommandDataTable>
+    <Command>MIS_ERR</Command>
+    <Connection>SP-REPORTS.Mis</Connection>
+    <Description>Returns MIS Last Error</Description>
+    <SqlCommandText>SELECT  
+	Duration = DATEDIFF(minute, el.StartTime, ISNULL(el.EndTime, GETDATE())), 
+	el.AuditID, 
+	el.PackageName, 
+	el.[Status], 
+	el.StartTime, 
+	el.EndTime, 
+	el.FailureSource, 
+	el.FailureMessage
+FROM 
+	Audit.ExecutionLog el 
+WHERE  
+	1 = 1 
+	AND el.AuditID = (SELECT MAX(AuditID) FROM Audit.ExecutionLog WHERE Status=2)  
+
+union all
+
+SELECT  
+	Duration = DATEDIFF(minute, eld.StartDate, ISNULL(eld.EndDate, GETDATE())), 
+	el.AuditID, 
+	el.PackageName, 
+	el.[Status], 
+	StartTime = eld.StartDate, 
+	EndTime = eld.EndDate, 
+	el.FailureSource, 
+	FailureMessage = eld.ErrorMessage
+FROM 
+	Audit.ExecutionLog el 
+	inner join Audit.ExecutionLogDetail eld on el.AuditID=eld.AuditID 
+WHERE  
+	1 = 1 
+	AND el.AuditID = (SELECT MAX(AuditID) FROM Audit.ExecutionLog WHERE Status=2)
+	and eld.Status=2  
+
+</SqlCommandText>
+  </MailCommandDataTable>
+  <MailCommandDataTable>
+    <Command>OFS_ERR</Command>
+    <Connection>SS-DW.FIN_BI_DW_CONFIG</Connection>
+    <Description>Returns Todays OFSAA Job Errors</Description>
+    <SqlCommandText>SELECT  
+	Duration = CASE WHEN el.EndTime IS NULL AND el.StartTime &lt; GETDATE()-1 THEN 0 ELSE DATEDIFF(MINUTE, el.StartTime,ISNULL(el.EndTime, GETDATE())) END, 
+	el.AuditID, 
+	el.PackageName, 
+	el.StartTime, 
+	el.EndTime, 
+	el.FailureSource, 
+	el.FailureMessage
+FROM 
+FIN_BI_DW_CONFIG.Audit.ExecutionLog el (NOLOCK)
+LEFT JOIN FIN_BI_DW_CONFIG.ETL.Package p (NOLOCK) ON el.PackageName = p.Name 
+WHERE  
+ 1=1 
+ AND (el.PackageName LIKE '%Ofsaa%' OR el.PackageName LIKE '%DwToDwMis%' OR el.PackageName LIKE '%MisValidation%') 
+ AND StartTime &gt; = CAST(GETDATE() AS DATE)
+ AND (Status = 2) 
+
+union all
+
+SELECT  
+	Duration = DATEDIFF(minute, eld.StartDate, ISNULL(eld.EndDate, GETDATE())), 
+	el.AuditID, 
+	el.PackageName, 
+	StartTime = eld.StartDate, 
+	EndTime = eld.EndDate, 
+	el.FailureSource, 
+	FailureMessage = eld.ErrorMessage
+FROM 
+	FIN_BI_DW_CONFIG.Audit.ExecutionLog el 
+	inner join FIN_BI_DW_CONFIG.Audit.ExecutionLogDetail eld on el.AuditID=eld.AuditID 
+WHERE  
+	1 = 1 
+	AND (el.PackageName LIKE '%Ofsaa%' OR el.PackageName LIKE '%DwToDwMis%' OR el.PackageName LIKE '%MisValidation%') 
+	AND StartTime &gt; = CAST(GETDATE() AS DATE)
+	and eld.Status=2  
+
+
+ORDER BY StartTime DESC</SqlCommandText>
+  </MailCommandDataTable>
+  <MailCommandDataTable>
+    <Command>GK_DWH</Command>
+    <Connection>SS-DW.FIN_BI_DW_CONFIG</Connection>
+    <Description>Geçiş Kontrol</Description>
+    <SqlCommandText>SELECT *
+FROM FIN_BI_DW_CONFIG.Etl.Package
+WHERE Name IN (  
+				'DwToOltpMisPartyRiskTransactionSummary'
+				)
+</SqlCommandText>
+  </MailCommandDataTable>
+  <MailCommandDataTable>
+    <Command>PR</Command>
+    <Connection>SS-DW.FIN_BI_DW_CONFIG</Connection>
+    <Description>DwToOltpMisPartyRiskTransactionSummary</Description>
+    <SqlCommandText>SELECT  
+	Duration = CASE WHEN el.EndTime IS NULL AND el.StartTime &lt; GETDATE()-1 THEN 0 ELSE DATEDIFF(MINUTE, el.StartTime,ISNULL(el.EndTime, GETDATE())) END, 
+	el.AuditID, 
+	el.PackageName, 
+	el.StartTime, 
+	el.EndTime, 
+	el.[Status], 
+	el.FailureSource, 
+	el.FailureMessage
+FROM 
+FIN_BI_DW_CONFIG.Audit.ExecutionLog el (NOLOCK)
+LEFT JOIN FIN_BI_DW_CONFIG.ETL.Package p (NOLOCK) ON el.PackageName = p.Name 
+WHERE  
+ 1=1 
+ AND (el.PackageName LIKE '%DwToOltpMasterPackages%' OR el.PackageName LIKE '%DwToOltpMisPartyRiskTransactionSummary%') 
+ AND StartTime &gt; = CAST(GETDATE() AS DATE)
+ --AND (Status = 0) 
+ORDER BY el.AuditID DESC</SqlCommandText>
+  </MailCommandDataTable>
+  <MailCommandDataTable>
+    <Command>GK_MIS</Command>
+    <Connection>SP-REPORTS.Mis</Connection>
+    <Description>Mis Geçiş Kontrol</Description>
+    <SqlCommandText>
+select LAST_ALTERED from INFORMATION_SCHEMA.ROUTINES
+WHERE ROUTINE_NAME='InsertScoreCardKpiRealizedMonthly'
+</SqlCommandText>
+  </MailCommandDataTable>
+  <MailCommandDataTable>
+    <Command>FD</Command>
+    <Connection>SS-DW.FIN_BI_INTG</Connection>
+    <Description>Min Date For FACT Delete</Description>
+    <SqlCommandText>select MIN_AS_OF_DATE = MIN(AS_OF_DATE) from OFSAAD_DWH.F_GL (NOLOCK)</SqlCommandText>
+  </MailCommandDataTable>
+</MailCommandDataSet>

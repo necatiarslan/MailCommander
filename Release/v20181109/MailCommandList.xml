@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes"?>
+<MailCommandDataSet xmlns="http://tempuri.org/MailCommandDataSet.xsd">
+  <MailCommandDataTable>
+    <Command>TABLES</Command>
+    <Connection>localhost</Connection>
+    <Description>Test Command</Description>
+    <SqlCommandText>SELECT * FROM master.INFORMATION_SCHEMA.TABLES</SqlCommandText>
+  </MailCommandDataTable>
+</MailCommandDataSet>
